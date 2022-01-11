@@ -86,6 +86,14 @@
                 <input class="input" type="range" name="salary" id="salary" min="300000" max="500000" step="100" value="400000">
                 <output class="salary-output text" for="salary">400000</output>
             </div>
+            <script>
+                const salary = document.querySelector('#salary');
+                const output = document.querySelector('.salary-output');
+                output.textContent = salary.value;
+                salary.addEventListener('input', function() {
+                    output.textContent = salary.value;
+                });
+            </script>
         </form>
     </div>
 </body>

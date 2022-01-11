@@ -55,8 +55,39 @@
                 <img class="profile" id="image4" src="..\assets\profile-images\Ellipse 1.png">
             </label>
                 </div>
+            </div>
+
+            <div class="row-content">
+                <label class="label text" for="gender">Gender</label>
+                <div>
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label class="text" for="male">Male</label>
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label class="text" for="female">Female</label>
+                </div>
+            </div>
+            <div class="row-content">
+                <label class="label text" for="department">Department</label>
+                <div>
+                    <input class="checkbox" type="checkbox" id="hr" name="hr" value="HR">
+                    <label class="text" for="hr">HR</label>
+                    <input class="checkbox" type="checkbox" id="sales" name="sales" value="sales">
+                    <label class="text" for="sales">Sales</label>
+                    <input class="checkbox" type="checkbox" id="finace" name="finace" value="finace">
+                    <label class="text" for="sales">Finance</label>
+                    <input class="checkbox" type="checkbox" id="engineer" name="engineer" value="engineer">
+                    <label class="text" for="sales">Engineer</label>
+                    <input class="checkbox" type="checkbox" id="others" name="others" value="others">
+                    <label class="text" for="sales">Others</label>
+                </div>
+            </div>
+            <div class="row-content">
+                <label class="label text" for="salary">Choose your salary: </label>
+                <input class="input" type="range" name="salary" id="salary" min="300000" max="500000" step="100" value="400000">
+                <output class="salary-output text" for="salary">400000</output>
+            </div>
         </form>
-        </div>
+    </div>
 </body>
 
 </html>

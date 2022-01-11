@@ -86,19 +86,12 @@
                 <input class="input" type="range" name="salary" id="salary" min="300000" max="500000" step="100" value="400000">
                 <output class="salary-output text" for="salary">400000</output>
             </div>
-            <script>
-                const salary = document.querySelector('#salary');
-                const output = document.querySelector('.salary-output');
-                output.textContent = salary.value;
-                salary.addEventListener('input', function() {
-                    output.textContent = salary.value;
-                });
-            </script>
 
             <div class="row-content">
                 <label class="label text" for="startDate">Start Date</label>
                 <div>
                     <select id="day" name="Day">
+                <option value="" disabled selected>Day</option>
                 <option value="1">1</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
@@ -132,6 +125,7 @@
                 <option value="31">31</option>
         </select>
                     <select id="month" name="Month">
+                <option value="" disabled selected>Month</option>
                <option value="Jan">January</option>
                <option value="Feb">Febuary</option>
                <option value="March">March</option>
@@ -146,6 +140,8 @@
                <option value="Dec">December</option>
          </select>
                     <select id="year" name="Year">
+                   <option value="" disabled selected>Year</option>
+                   <option value="2021">2021</option>
                    <option value="2020">2020</option>
                    <option value="2019">2019</option>
                    <option value="2018">2018</option>
@@ -153,8 +149,27 @@
                    <option value="2016">2016</option>
              </select>
                 </div>
+            </div>
+            <div class="row-content">
+                <label class="label text" for="notes">Notes</label>
+                <textarea id="notes" class="input" name="Notes" placeholder="" style="height: 100px;"></textarea>
+            </div>
+            <div class="buttonParent">
+                <a href="./home.html" class="resetButton button cancelButton">Cancel</a>
+                <div class="submit-reset">
+                    <button type="submit" class="button submitButton" id="submitButton">Submit</button>
+                    <button type="reset" class="resetButton button">Reset</button>
+                </div>
         </form>
         </div>
 </body>
+<script>
+    const salary = document.querySelector('#salary');
+    const output = document.querySelector('.salary-output');
+    output.textContent = salary.value;
+    salary.addEventListener('input', function() {
+        output.textContent = salary.value;
+    });
+</script>
 
 </html>

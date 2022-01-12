@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initual-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googlrapies.com/css2?family=Roboto:wght@300;400;500;600&display=swap" rel="stylesheet">
     <title>Employee payroll form</title>
     <link rel="stylesheet" href="\css\addEmployee.css">
@@ -20,6 +20,7 @@
             </div>
         </div>
     </header>
+
     <div class="form-content">
         <form class="form" action="#" onsubmit="save();return false">
             <div class="form-head">
@@ -83,7 +84,7 @@
             </div>
             <div class="row-content">
                 <label class="label text" for="salary">Choose your salary: </label>
-                <input class="input" type="range" name="salary" id="salary" min="300000" max="500000" step="100" value="400000">
+                <input class="input slide-range" type="range" name="salary" id="salary" min="300000" max="500000" step="100" value="400000">
                 <output class="salary-output text" for="salary">400000</output>
             </div>
 

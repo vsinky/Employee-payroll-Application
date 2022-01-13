@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googlrapies.com/css2?family=Roboto:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapies.com/css2?family=Roboto:wght@300;400;500;600&display=swap" rel="stylesheet">
     <title>Employee payroll form</title>
     <link rel="stylesheet" href="\css\addEmployee.css">
 </head>
@@ -22,13 +22,14 @@
     </header>
 
     <div class="form-content">
-        <form class="form" action="#" onsubmit="save();return false">
+        <form class="form" action="#" onsubmit="save(event);return false" onreset="salaryReset();">
             <div class="form-head">
                 Employee payroll form
             </div>
             <div class="row-content">
                 <label class="label text" for="name">Name</label>
                 <input class="input" type="text" id="name" name="name" placeholder="Your name.." required>
+                <error-output class="text-error" for="name"></error-output>
             </div>
 
 
@@ -172,5 +173,7 @@
         output.textContent = salary.value;
     });
 </script>
+
+<script type="text/javascript" src="..\js\EmployeePayrollData.js"></script>
 
 </html>

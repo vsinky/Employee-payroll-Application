@@ -229,8 +229,18 @@ a.button:hover {
     .label {
         max-width: 50px;
     }
+    .profile-radio-content {
+        flex-wrap: wrap;
+    }
 }
 
 .slide-range {
     padding: 0px;
+}
+
+error-output {
+    margin-left: 10px;
+    font-size: 12px;
+    font-style: italic;
+    color: red;
 }

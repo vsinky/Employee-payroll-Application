@@ -143,6 +143,7 @@
          </select>
                     <select id="year" name="Year">
                    <option value="" disabled selected>Year</option>
+                   <option value="2022">2022</option>
                    <option value="2021">2021</option>
                    <option value="2020">2020</option>
                    <option value="2019">2019</option>
@@ -151,6 +152,7 @@
                    <option value="2016">2016</option>
              </select>
                 </div>
+                <error-output class="text-error" id="startDate"></error-output>
             </div>
             <div class="row-content">
                 <label class="label text" for="notes">Notes</label>
@@ -165,15 +167,8 @@
         </form>
         </div>
 </body>
-<script>
-    const salary = document.querySelector('#salary');
-    const output = document.querySelector('.salary-output');
-    output.textContent = salary.value;
-    salary.addEventListener('input', function() {
-        output.textContent = salary.value;
-    });
-</script>
 
 <script type="text/javascript" src="..\js\EmployeePayrollData.js"></script>
+<script type="text/javascript" src="..\js\EmployeePayroll.js"></script>
 
 </html>

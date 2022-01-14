@@ -22,7 +22,7 @@
     </header>
 
     <div class="form-content">
-        <form class="form" action="#" onsubmit="save(event);return false" onreset="salaryReset();">
+        <form class="form" action="#" onsubmit="save();return false">
             <div class="form-head">
                 Employee payroll form
             </div>
@@ -71,15 +71,15 @@
             <div class="row-content">
                 <label class="label text" for="department">Department</label>
                 <div>
-                    <input class="checkbox" type="checkbox" id="hr" name="hr" value="HR">
+                    <input class="checkbox" type="checkbox" id="hr" name="department" value="HR">
                     <label class="text" for="hr">HR</label>
-                    <input class="checkbox" type="checkbox" id="sales" name="sales" value="sales">
+                    <input class="checkbox" type="checkbox" id="sales" name="department" value="sales">
                     <label class="text" for="sales">Sales</label>
-                    <input class="checkbox" type="checkbox" id="finace" name="finace" value="finace">
+                    <input class="checkbox" type="checkbox" id="finace" name="department" value="finace">
                     <label class="text" for="sales">Finance</label>
-                    <input class="checkbox" type="checkbox" id="engineer" name="engineer" value="engineer">
+                    <input class="checkbox" type="checkbox" id="engineer" name="department" value="engineer">
                     <label class="text" for="sales">Engineer</label>
-                    <input class="checkbox" type="checkbox" id="others" name="others" value="others">
+                    <input class="checkbox" type="checkbox" id="others" name="department" value="others">
                     <label class="text" for="sales">Others</label>
                 </div>
             </div>
